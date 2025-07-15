@@ -1,0 +1,10 @@
+ul {
+  list-style: none;
+  
+  width: max(500px, 25vw);
+  padding: 0;
+}
+
+ul > li {
+  margin-left: 0;
+}

@@ -1,0 +1,24 @@
+div {
+  display: flex;
+}
+
+.item-container {
+  padding: 12px;
+  margin: 8px auto;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid black;
+}
+
+.item-container > div {
+  justify-content: right;
+  flex-grow: 2;
+  column-gap: 12px;
+}
+
+.done {
+  background-color: #c7fcd1;
+}
+
+div > img {
+  cursor: pointer;
+}

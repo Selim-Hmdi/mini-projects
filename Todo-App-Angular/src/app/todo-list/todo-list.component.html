@@ -1,0 +1,15 @@
+<ul>
+  @for(item of todoItems; track item.id) {
+  <li>
+    <app-todo-item
+      [draggable]="true"
+      (dragStartEvent)="dragStartHandler($event)"
+      (dragover)="$event.preventDefault()"
+      (dropEvent)="dropHandler($event)"
+      (deleteEvent)="deleteItem($event)"
+      [attr.data-item-id]="item.id"
+      [item]="item"
+    ></app-todo-item>
+  </li>
+  }
+</ul>

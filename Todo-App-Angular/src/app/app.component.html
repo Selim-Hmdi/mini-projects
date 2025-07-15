@@ -1,0 +1,8 @@
+<div class="container flex-vertical flex-centered">
+  <form>
+    <input placeholder="Write your task..." type="text" name="todo-input" id="todo-input" [(ngModel)]="textInput">
+    <button (click)="addItem()">Add</button>
+  </form>
+  
+  <app-todo-list [todoItems]="items"></app-todo-list>
+</div>

@@ -1,0 +1,7 @@
+form > * {
+  margin: 0 4px;
+}
+
+form > input, form > button {
+  padding: 8px;
+}
